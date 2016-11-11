@@ -5,6 +5,9 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 fp	DayTwo/dictionary_words.py	/^fp = open("\/usr\/share\/dict\/words")$/;"	v
+frequency	Histogram/histogram.py	/^def frequency(word, hist_dict):$/;"	f
+hist_dict	Histogram/histogram.py	/^hist_dict = histogram(sys.argv[1])$/;"	v
+histogram	Histogram/histogram.py	/^def histogram(source_text):$/;"	f
 lines	DayTwo/dictionary_words.py	/^lines = fp.readlines()$/;"	v
 quote	DayOne/python_quote.py	/^    quote = random_python_quote()$/;"	v
 quotes	DayOne/python_quote.py	/^quotes = ("It's just a flesh wound.",$/;"	v
@@ -16,4 +19,6 @@ random_python_quote	DayOne/python_quote.py	/^def random_python_quote():$/;"	f
 randomize_words	DayOne/rearange.py	/^def randomize_words():$/;"	f
 sentence	DayTwo/dictionary_words.py	/^sentence = []$/;"	v
 sys	DayOne/rearange.py	/^import sys$/;"	i
+sys	Histogram/histogram.py	/^import sys$/;"	i
+unique_words	Histogram/histogram.py	/^def unique_words(hist_dict):$/;"	f
 word_list	DayOne/rearange.py	/^word_list = []$/;"	v
