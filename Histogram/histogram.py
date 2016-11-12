@@ -1,10 +1,14 @@
 import sys
 
 
-def histogram(source_text):
-    hist_dict = {}
+def open_doc(source_text):
     doc = open(source_text)
     lines = doc.readlines()
+    return lines
+
+
+def histogram(lines):
+    hist_dict = {}
 
     for line in lines:
         for word in line.split(' '):
@@ -28,6 +32,6 @@ def frequency(word, hist_dict):
     else:
         return hist_dict[word]
 
-hist_dict = histogram(sys.argv[1])
+hist_dict = histogram(open_doc(sys.argv[1]))
 print(unique_words(hist_dict))
-print(frequency("bee", hist_dict))
+print(frequency("the", hist_dict))
