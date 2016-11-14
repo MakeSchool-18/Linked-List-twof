@@ -1610,6 +1610,7 @@ Global_kind	StochasticSampling/venv/include/python2.7/Python-ast.h	/^           
 GoToColumn	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/pyparsing.py	/^class GoToColumn(_PositionToken):$/;"	c
 GoToColumn	StochasticSampling/venv/lib/python2.7/site-packages/pkg_resources/_vendor/pyparsing.py	/^class GoToColumn(_PositionToken):$/;"	c
 Gone	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/exceptions.py	/^class Gone(HTTPException):$/;"	c
+Graph	StochasticSampling/histogram.py	/^class Graph:$/;"	c
 GreekLangModel	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/langgreekmodel.py	/^GreekLangModel = ($/;"	v
 Group	StochasticSampling/venv/lib/python2.7/site-packages/click/__init__.py	/^     CommandCollection, Parameter, Option, Argument$/;"	i
 Group	StochasticSampling/venv/lib/python2.7/site-packages/click/core.py	/^class Group(MultiCommand):$/;"	c
@@ -3134,6 +3135,7 @@ NoSuchOption	StochasticSampling/venv/lib/python2.7/site-packages/click/__init__.
 NoSuchOption	StochasticSampling/venv/lib/python2.7/site-packages/click/exceptions.py	/^class NoSuchOption(UsageError):$/;"	c
 NoSuchOption	StochasticSampling/venv/lib/python2.7/site-packages/click/parser.py	/^     BadArgumentUsage$/;"	i
 NoValue	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/command/sdist.py	/^        class NoValue:$/;"	c	function:sdist._remove_os_link
+Node	StochasticSampling/histogram.py	/^class Node:$/;"	c
 Node	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/nodes.py	/^class Node(with_metaclass(NodeType, object)):$/;"	c
 Node	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/visitor.py	/^from jinja2.nodes import Node$/;"	i
 Node	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/base.py	/^class Node(object):$/;"	c
@@ -6987,6 +6989,7 @@ __ilshift__	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/pypa
 __ilshift__	StochasticSampling/venv/lib/python2.7/site-packages/pkg_resources/_vendor/pyparsing.py	/^    def __ilshift__(self, other):$/;"	m	class:Forward	file:
 __imul__	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/datastructures.py	/^    __imul__ = __iadd__$/;"	v	class:ImmutableListMixin
 __index__	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/local.py	/^    __index__ = lambda x: x._get_current_object().__index__()$/;"	v	class:LocalProxy
+__init__	StochasticSampling/histogram.py	/^    def __init__(self, word):$/;"	m	class:Node
 __init__	StochasticSampling/venv/lib/python2.7/UserDict.py	/^    def __init__(*args, **kwargs):$/;"	m	class:UserDict
 __init__	StochasticSampling/venv/lib/python2.7/_abcoll.py	/^    def __init__(self, mapping):$/;"	m	class:MappingView
 __init__	StochasticSampling/venv/lib/python2.7/_weakrefset.py	/^    def __init__(self, data=None):$/;"	m	class:WeakSet
@@ -14715,6 +14718,7 @@ gen_header	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/comman
 gen_histogram_dict	StochasticSampling/histogram.py	/^def gen_histogram_dict(lines):$/;"	f
 gen_histogram_dict	StochasticSampling/sampling.py	/^from histogram import gen_histogram_dict, open_doc$/;"	i
 gen_histogram_dict	StochasticSampling/server.py	/^from histogram import gen_histogram_dict, open_doc$/;"	i
+gen_histogram_graph	StochasticSampling/histogram.py	/^def gen_histogram_graph(lines):$/;"	f
 gen_salt	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/debug/__init__.py	/^from werkzeug.security import gen_salt$/;"	i
 gen_salt	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/security.py	/^def gen_salt(length):$/;"	f
 gen_setup	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/package_index.py	/^    def gen_setup(self, filename, fragment, tmpdir):$/;"	m	class:PackageIndex
@@ -16244,6 +16248,7 @@ insertText	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/html5
 insert_on	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/pkg_resources/__init__.py	/^    def insert_on(self, path, loc=None, replace=False):$/;"	m	class:Distribution
 insert_on	StochasticSampling/venv/lib/python2.7/site-packages/pkg_resources/__init__.py	/^    def insert_on(self, path, loc=None, replace=False):$/;"	m	class:Distribution
 insert_option_group	StochasticSampling/venv/lib/python2.7/site-packages/pip/baseparser.py	/^    def insert_option_group(self, idx, *args, **kwargs):$/;"	m	class:CustomOptionParser
+insert_word	StochasticSampling/histogram.py	/^    def insert_word(self, word):$/;"	m	class:Graph
 insertion_sort	StochasticSampling/venv/lib/python2.7/encodings/punycode.py	/^def insertion_sort(base, extended, errors):$/;"	f
 insertion_unsort	StochasticSampling/venv/lib/python2.7/encodings/punycode.py	/^def insertion_unsort(str, extended):$/;"	f
 inspect	StochasticSampling/venv/lib/python2.7/site-packages/click/decorators.py	/^import inspect$/;"	i
@@ -18031,6 +18036,7 @@ no_transform	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/datast
 no_transform	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/datastructures.py	/^    no_transform = cache_property('no-transform', None, None)$/;"	v	class:_CacheControl
 no_use_wheel	StochasticSampling/venv/lib/python2.7/site-packages/pip/cmdoptions.py	/^no_use_wheel = partial($/;"	v
 node	StochasticSampling/venv/include/python2.7/node.h	/^} node;$/;"	t	typeref:struct:_node
+nodes	StochasticSampling/histogram.py	/^    nodes = {}$/;"	v	class:Graph
 nodes	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/compiler.py	/^from jinja2 import nodes$/;"	i
 nodes	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/environment.py	/^from jinja2 import nodes$/;"	i
 nodes	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/ext.py	/^from jinja2 import nodes$/;"	i
@@ -19501,11 +19507,13 @@ raise_helper	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/debug.py
 raise_routing_exception	StochasticSampling/venv/lib/python2.7/site-packages/flask/app.py	/^    def raise_routing_exception(self, request):$/;"	m	class:Flask
 raise_stmt	StochasticSampling/venv/include/python2.7/graminit.h	/^#define raise_stmt /;"	d
 rand_index	DayTwo/dictionary_words.py	/^    rand_index = random.randint(0, 235886 - 1)$/;"	v
+rand_next_node	StochasticSampling/histogram.py	/^    def rand_next_node(self, node):$/;"	m	class:Graph
 rand_word	StochasticSampling/sampling.py	/^def rand_word(histogram, total):$/;"	f
 rand_word	StochasticSampling/server.py	/^from sampling import get_total, rand_word$/;"	i
 random	DayOne/python_quote.py	/^import random$/;"	i
 random	DayOne/rearange.py	/^import random$/;"	i
 random	DayTwo/dictionary_words.py	/^import random$/;"	i
+random	StochasticSampling/histogram.py	/^import random$/;"	i
 random	StochasticSampling/sampling.py	/^import random$/;"	i
 random	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/retrying.py	/^import random$/;"	i
 random	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/command/easy_install.py	/^import random$/;"	i
@@ -20456,6 +20464,7 @@ send_response	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/servi
 send_static_file	StochasticSampling/venv/lib/python2.7/site-packages/flask/helpers.py	/^    def send_static_file(self, filename):$/;"	m	class:_PackageBoundObject
 sendall	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/contrib/pyopenssl.py	/^    def sendall(self, data):$/;"	m	class:WrappedSocket
 sentence	DayTwo/dictionary_words.py	/^sentence = []$/;"	v
+sentence_from_graph	StochasticSampling/histogram.py	/^def sentence_from_graph(source_text):$/;"	f
 sep	StochasticSampling/venv/lib/python2.7/ntpath.py	/^sep = '\\\\'$/;"	v
 sep	StochasticSampling/venv/lib/python2.7/os.py	/^from os.path import (curdir, pardir, sep, pathsep, defpath, extsep, altsep,$/;"	i
 sep	StochasticSampling/venv/lib/python2.7/posixpath.py	/^sep = '\/'$/;"	v
@@ -22101,6 +22110,7 @@ total_seconds	StochasticSampling/venv/lib/python2.7/site-packages/flask/sessions
 total_seconds	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/caches/redis_cache.py	/^def total_seconds(td):$/;"	f
 total_seconds	StochasticSampling/venv/lib/python2.7/site-packages/pip/compat/__init__.py	/^def total_seconds(td):$/;"	f
 total_seconds	StochasticSampling/venv/lib/python2.7/site-packages/pip/utils/outdated.py	/^from pip.compat import total_seconds, WINDOWS$/;"	i
+total_subsequence_count	StochasticSampling/histogram.py	/^    total_subsequence_count = 0$/;"	v	class:Node
 toupper	StochasticSampling/venv/include/python2.7/bytes_methods.h	/^#define toupper(/;"	d
 toupper	StochasticSampling/venv/include/python2.7/bytes_methods.h	/^#undef toupper$/;"	d
 toupper	StochasticSampling/venv/include/python2.7/pyport.h	/^#define toupper(/;"	d
@@ -22514,6 +22524,8 @@ upload_documentation	StochasticSampling/venv/lib/python2.7/site-packages/pip/_ve
 upload_file	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/distlib/index.py	/^    def upload_file(self, metadata, filename, signer=None, sign_password=None,$/;"	m	class:PackageIndex
 upload_file	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/command/upload_docs.py	/^    def upload_file(self, filename):$/;"	m	class:upload_docs
 upper	StochasticSampling/venv/include/python2.7/Python-ast.h	/^                        expr_ty upper;$/;"	m	struct:_slice::__anon110::__anon111
+upsert_vert	StochasticSampling/histogram.py	/^    def upsert_vert(self, prev_word, subsequent_word):$/;"	m	class:Graph
+upsert_vert	StochasticSampling/histogram.py	/^    def upsert_vert(self, word, node_dict):$/;"	m	class:Node
 uptodate	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/loaders.py	/^            def uptodate():$/;"	f	function:FileSystemLoader.get_source
 uptodate	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/loaders.py	/^            def uptodate():$/;"	f	function:PackageLoader.get_source
 uri_to_iri	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/urls.py	/^def uri_to_iri(uri, charset='utf-8', errors='replace'):$/;"	f
@@ -22885,6 +22897,7 @@ version_option	StochasticSampling/venv/lib/python2.7/site-packages/click/decorat
 version_parts	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/distro.py	/^    def version_parts(self, best=False):$/;"	m	class:LinuxDistribution
 version_parts	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/distro.py	/^def version_parts(best=False):$/;"	f
 version_string	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/serving.py	/^    def version_string(self):$/;"	m	class:WSGIRequestHandler
+verticies	StochasticSampling/histogram.py	/^    verticies = {}$/;"	v	class:Node
 view	StochasticSampling/venv/include/python2.7/abstract.h	/^     PyAPI_FUNC(void) PyBuffer_Release(Py_buffer *view);$/;"	v
 view	StochasticSampling/venv/include/python2.7/memoryobject.h	/^    Py_buffer view;$/;"	m	struct:__anon42
 view	StochasticSampling/venv/lib/python2.7/site-packages/flask/views.py	/^        def view(*args, **kwargs):$/;"	f	function:View.as_view
@@ -23216,6 +23229,7 @@ with_statement	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/serv
 with_stmt	StochasticSampling/venv/include/python2.7/graminit.h	/^#define with_stmt /;"	d
 wkref	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/pyparsing.py	/^from weakref import ref as wkref$/;"	i
 wkref	StochasticSampling/venv/lib/python2.7/site-packages/pkg_resources/_vendor/pyparsing.py	/^from weakref import ref as wkref$/;"	i
+word	StochasticSampling/histogram.py	/^    word = ""$/;"	v	class:Node
 word_list	DayOne/rearange.py	/^word_list = []$/;"	v
 working_set	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/pkg_resources/__init__.py	/^working_set = None$/;"	v
 working_set	StochasticSampling/venv/lib/python2.7/site-packages/pkg_resources/__init__.py	/^working_set = None$/;"	v
