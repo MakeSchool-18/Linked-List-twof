@@ -129,28 +129,42 @@ def open_doc(source_text):
 def gen_histogram_graph(lines):
     graph = Graph()
     previous_word = ""
+    is_end_thought = False
+    mid_word_characters = ["'", "-", ","]
+    end_characters = ["?", ".", ";", ":", "!"]
 
     if isinstance(lines, list):
         for line in lines:
             for word in line.split(' '):
+                set_end_thought = False
+
+                if word[:-1] in end_characters:
+                    set_end_thought = True
+
                 stripped_word = ''.join([i for i in word if i.isalpha()
-                                        or i == "'"
-                                        or ((i == "-" and len(word) > 1))]) \
-                                        .lower()
+                                        or ((i in mid_word_characters
+                                            and len(word) > 1))]) \
+                                .lower()
 
                 if stripped_word != '':
                     graph.insert_word(stripped_word)
 
-                    if previous_word == "":
+                    if is_end_thought:
+                        is_end_thought = False
+                        break
+                    elif previous_word == "":
                         previous_word = stripped_word
                     else:
                         graph.upsert_vert(previous_word, stripped_word)
                         previous_word = stripped_word
+
+                if set_end_thought:
+                    is_end_thought = True
     else:
         for word in line.split(' '):
             stripped_word = ''.join([i for i in word if i.isalpha()
-                                    or i == "'"
-                                    or ((i == "-" and len(word) > 1))]) \
+                                    or ((i in mid_word_characters
+                                        and len(word) > 1))]) \
                                     .lower()
             if stripped_word != '':
                 graph.insert_word(stripped_word)

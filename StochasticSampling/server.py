@@ -14,6 +14,11 @@ def get_rand_word():
     return sentence_from_graph(graph, sentence_len)
 
 
+@app.route("/", methods=['GET'])
+def get_root():
+    return "Try using q as a parameter where q is the length of the sentence"
+
+
 if __name__ == "__main__":
     # Bind to PORT if defined, otherwise default to 5000.
     port = int(os.environ.get('PORT', 5000))
