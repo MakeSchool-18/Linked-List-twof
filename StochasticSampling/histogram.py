@@ -1,52 +1,4 @@
 import random
-import sys
-
-
-class Node:
-    word = ""
-    # dictionary where the key is the word and the value is [Node, frequency]
-    verticies = {}
-    total_subsequence_count = 0
-
-    def upsert_vert(self, word, node_dict):
-        if word in self.verticies:
-            self.verticies[word][1] += 1
-            self.total_subsequence_count += 1
-        else:
-            self.verticies[word] = [node_dict[word], 1]
-            self.total_subsequence_count += 1
-
-    def __init__(self, word):
-        self.word = word
-
-
-class Graph:
-    # dictionary of word: Node
-    nodes = {}
-
-    def insert_word(self, word):
-        if word not in self.nodes:
-            self.nodes[word] = Node(word)
-
-    def upsert_vert(self, prev_word, subsequent_word):
-        self.nodes[prev_word].upsert_vert(subsequent_word, self.nodes)
-
-    def rand_next_node(self, node):
-        rand_index = random.randint(0, node.total_subsequence_count)
-
-        traversal_index = 0
-        for key, value in node.verticies.items():
-            if rand_index in range(traversal_index, value[1]
-                                   + traversal_index):
-                return node.verticies[key][0]
-            else:
-                traversal_index += value[1]
-
-
-def open_doc(source_text):
-    doc = open(source_text)
-    lines = doc.readlines()
-    return lines
 
 
 def gen_histogram_dict(lines):
@@ -73,6 +25,107 @@ def gen_histogram_dict(lines):
     return hist_dict
 
 
+# Node class. Contains the word and a dictionary of each possible
+# subsequent word
+class Node:
+    def __init__(self, word):
+        # dictionary where the key is the word
+        # and the value is [Node, frequency]
+        # using an array for easy incrementation
+        self.verticies = {}
+        self.word = word
+        self.total_subsequence_count = 0
+
+    # increments the frequency of the word if it exsits
+    # otherwise insert it as a vertex with a frequency of 1
+    def upsert_vert(self, the_word, node_dict):
+        if the_word in self.verticies:
+            self.verticies[the_word][1] += 1
+            self.total_subsequence_count += 1
+        else:
+            self.verticies[the_word] = [node_dict[the_word], 1]
+            self.total_subsequence_count += 1
+
+    # takes a node and returns a subsequent node at random
+    # based off of the frequency of the the verticies
+    def rand_next_node(self):
+        if self.total_subsequence_count-1 == -1:
+            return -1
+
+        rand_index = random.randint(0, self.total_subsequence_count-1)
+        traversal_index = 0
+
+        for key, value in self.verticies.items():
+            if rand_index in range(traversal_index, value[1]
+                                   + traversal_index):
+
+                return self.verticies[key][0]
+            else:
+                traversal_index += value[1]
+
+    # pretty self explanitory, prints the contents of the node
+    # used this for debugging but thought I'd leave it in just in case
+    # someone else wanted it
+    def print_node(self):
+        to_print = ""
+        to_print += self.word
+        to_print += " {"
+
+        for key, value in self.verticies.items():
+            to_print += key + ", "
+
+        to_print += "}"
+        print(to_print)
+
+
+# Graph class. Just holds all the nodes.
+class Graph:
+    def __init__(self):
+        # dictionary where the keys are words as strings and values
+        # are node objects
+        self.nodes = {}
+
+    # inserts a word into the graph if it doesn't already exist
+    # within the graph
+    def insert_word(self, word):
+        if word not in self.nodes:
+            self.nodes[word] = Node(word)
+
+    # abstraction of the node.upsert_vert() fuction
+    # trying to minimize interaction with raw nodes
+    def upsert_vert(self, prev_word, subsequent_word):
+        self.nodes[prev_word].upsert_vert(subsequent_word, self.nodes)
+
+    # Similar to above, minimizing raw node interaction
+    # There's a chance that a node won't have any verticies
+    # If that's the case, we start at a new random location
+    # within the graph
+    def rand_next_node(self, node):
+        next_node = node.rand_next_node()
+
+        if next_node == -1:
+            next_node = self.nodes[random.choice(list(self.nodes.keys()))]
+
+        return next_node
+
+    # Runs through each node in the graph and prints it out
+    # Also used primarily for debugging
+    def print_graph(self):
+        for key in self.nodes.keys():
+            # dictionary of word: Node
+            self.nodes[key].print_node()
+
+
+# opens a document and returns lines
+def open_doc(source_text):
+    doc = open(source_text)
+    lines = doc.readlines()
+    return lines
+
+
+# generates a graph based on the source material passed to it
+# either as a single line of text or multiple lines like if a
+# docment was opened
 def gen_histogram_graph(lines):
     graph = Graph()
     previous_word = ""
@@ -80,38 +133,34 @@ def gen_histogram_graph(lines):
     if isinstance(lines, list):
         for line in lines:
             for word in line.split(' '):
-                stripped_word = ''.join([i for i in word if i.isalpha()])
+                stripped_word = ''.join([i for i in word if i.isalpha()
+                                        or i == "'"
+                                        or ((i == "-" and len(word) > 1))]) \
+                                        .lower()
+
                 if stripped_word != '':
                     graph.insert_word(stripped_word)
+
                     if previous_word == "":
                         previous_word = stripped_word
                     else:
                         graph.upsert_vert(previous_word, stripped_word)
-                        print(previous_word)
                         previous_word = stripped_word
+    else:
+        for word in line.split(' '):
+            stripped_word = ''.join([i for i in word if i.isalpha()
+                                    or i == "'"
+                                    or ((i == "-" and len(word) > 1))]) \
+                                    .lower()
+            if stripped_word != '':
+                graph.insert_word(stripped_word)
+
+                if previous_word == "":
+                    previous_word = stripped_word
+                else:
+                    graph.upsert_vert(previous_word, stripped_word)
+                    previous_word = stripped_word
     return graph
 
-
-def sentence_from_graph(source_text):
-    sentence = []
-    graph = gen_histogram_graph(open_doc(source_text))
-    current_node = graph.nodes[random.choice(list(graph.nodes.keys()))]
-
-    for i in range(10):
-        current_node = graph.rand_next_node(current_node)
-        sentence.append(current_node.word)
-
-    print(" ".join(sentence))
-
-
-def unique_words(hist_dict):
-    return len(hist_dict)
-
-
-def frequency(word, hist_dict):
-    if word not in hist_dict:
-        return 0
-    else:
-        return hist_dict[word]
-
-sentence_from_graph(sys.argv[1])
+# TODO:
+# Fix the ingestion so that it stops recording subsequence at periods

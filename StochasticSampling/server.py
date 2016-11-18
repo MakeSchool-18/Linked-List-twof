@@ -1,21 +1,20 @@
 from flask import Flask, request
-from sampling import get_total, rand_word
-from histogram import gen_histogram_dict, open_doc
-import json
+from sampling import sentence_from_graph
+from histogram import gen_histogram_graph, open_doc
+import os
 
 app = Flask(__name__)
 
 
 @app.route("/word", methods=['GET'])
 def get_rand_word():
-    histogram = gen_histogram_dict(open_doc("beeMovie.txt"))
-    sentence = []
     sentence_len = int(request.args.get('q'))
+    graph = gen_histogram_graph(open_doc("beeMovie.txt"))
 
-    for i in range(sentence_len):
-        sentence.append(rand_word(histogram, get_total(histogram)))
-    return " ".join(sentence)
+    return sentence_from_graph(graph, sentence_len)
 
 
 if __name__ == "__main__":
-    app.run()
+    # Bind to PORT if defined, otherwise default to 5000.
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
