@@ -16,6 +16,7 @@ class Linked_List:
             for item in arr:
                 self.append(item)
 
+    # O(1)
     def append(self, data):
         new_node = Node(data, None)
         if self.count == 0:
@@ -27,6 +28,7 @@ class Linked_List:
 
         self.count += 1
 
+    # O(1)
     def prepend(self, data):
         new_node = Node(data, None)
         if self.count == 0:
@@ -38,7 +40,26 @@ class Linked_List:
 
         self.count += 1
 
+    # O(n)
+    def upsert_first(self, data, filter_func):
+        if self.find(lambda item: item == data) is None:
+            self.append(data)
+        else:
+            current_node = self.head
+
+            while current_node.next is not None:
+                if filter_func(current_node.data):
+                    current_node.data = data
+                elif filter_func(current_node.next.data):
+                    current_node.next.data = data
+                else:
+                    current_node = current_node.next
+                    continue
+
+            return None
+
     # This is really dirty and needs to be cleaned up
+    # O(n)
     def delete(self, data):
         found = False
 
@@ -81,6 +102,7 @@ class Linked_List:
                 self.tail = current_node
                 print("none")
 
+    # O(n) (Given O(1) filter function)
     def find(self, filter_func):
         if self.count == 0:
             return None
@@ -98,6 +120,7 @@ class Linked_List:
 
         return None
 
+    # O(n)
     def as_list(self):
         listed = []
         if self.count == 0:
@@ -110,6 +133,7 @@ class Linked_List:
                 current_node = current_node.next
             return listed
 
+    # O(n)
     def print_list(self):
         if self.count == 0:
             return
@@ -119,6 +143,6 @@ class Linked_List:
             while current_node.next is not None:
                 print(current_node.next.data)
                 current_node = current_node.next
-
+    # O(1)
     def length(self):
         return self.count

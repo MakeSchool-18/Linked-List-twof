@@ -130,8 +130,8 @@ def gen_histogram_graph(lines):
     graph = Graph()
     previous_word = ""
     is_end_thought = False
-    mid_word_characters = ["'", "-", ","]
-    end_characters = ["?", ".", ";", ":", "!"]
+    mid_word_characters = ["'", "-"]
+    end_characters = ["?", ".", ";", ":", "!", ","]
 
     if isinstance(lines, list):
         for line in lines:

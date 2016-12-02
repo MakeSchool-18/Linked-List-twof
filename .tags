@@ -2105,6 +2105,9 @@ HashMismatch	StochasticSampling/venv/lib/python2.7/site-packages/pip/exceptions.
 HashMismatch	StochasticSampling/venv/lib/python2.7/site-packages/pip/utils/hashes.py	/^from pip.exceptions import HashMismatch, HashMissing, InstallationError$/;"	i
 HashMissing	StochasticSampling/venv/lib/python2.7/site-packages/pip/exceptions.py	/^class HashMissing(HashError):$/;"	c
 HashMissing	StochasticSampling/venv/lib/python2.7/site-packages/pip/utils/hashes.py	/^from pip.exceptions import HashMismatch, HashMissing, InstallationError$/;"	i
+HashTable	HashTable/Hash-Table-twof/hashtable.py	/^class HashTable(object):$/;"	c
+HashTable	HashTable/Hash-Table-twof/test_hashtable.py	/^from hashtable import HashTable$/;"	i
+HashTableTest	HashTable/Hash-Table-twof/test_hashtable.py	/^class HashTableTest(unittest.TestCase):$/;"	c
 HashUnpinned	StochasticSampling/venv/lib/python2.7/site-packages/pip/exceptions.py	/^class HashUnpinned(HashError):$/;"	c
 Hashable	StochasticSampling/venv/lib/python2.7/_abcoll.py	/^class Hashable:$/;"	c
 Hashes	StochasticSampling/venv/lib/python2.7/site-packages/pip/req/req_install.py	/^from pip.utils.hashes import Hashes$/;"	i
@@ -2867,6 +2870,11 @@ Link	StochasticSampling/venv/lib/python2.7/site-packages/pip/req/req_install.py	
 Link	StochasticSampling/venv/lib/python2.7/site-packages/pip/vcs/subversion.py	/^from pip.index import Link$/;"	i
 LinkFileLock	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/lockfile/__init__.py	/^def LinkFileLock(*args, **kwds):$/;"	f
 LinkLockFile	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/lockfile/linklockfile.py	/^class LinkLockFile(LockBase):$/;"	c
+LinkedListTest	LinkedList/test_linked_list.py	/^class LinkedListTest(unittest.TestCase):$/;"	c
+Linked_List	HashTable/Hash-Table-twof/hashtable.py	/^from linked_list import Linked_List$/;"	i
+Linked_List	HashTable/Hash-Table-twof/linked_list.py	/^class Linked_List:$/;"	c
+Linked_List	LinkedList/linked_list.py	/^class Linked_List:$/;"	c
+Linked_List	LinkedList/test_linked_list.py	/^from linked_list import Linked_List, Node$/;"	i
 LintMiddleware	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/contrib/lint.py	/^class LintMiddleware(object):$/;"	c
 LinuxDistribution	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/distro.py	/^class LinuxDistribution(object):$/;"	c
 List	StochasticSampling/venv/include/python2.7/Python-ast.h	/^                } List;$/;"	m	union:_expr::__anon87	typeref:struct:_expr::__anon87::__anon108
@@ -3332,6 +3340,9 @@ NoSuchOption	StochasticSampling/venv/lib/python2.7/site-packages/click/__init__.
 NoSuchOption	StochasticSampling/venv/lib/python2.7/site-packages/click/exceptions.py	/^class NoSuchOption(UsageError):$/;"	c
 NoSuchOption	StochasticSampling/venv/lib/python2.7/site-packages/click/parser.py	/^     BadArgumentUsage$/;"	i
 NoValue	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/command/sdist.py	/^        class NoValue:$/;"	c	function:sdist._remove_os_link
+Node	HashTable/Hash-Table-twof/linked_list.py	/^class Node:$/;"	c
+Node	LinkedList/linked_list.py	/^class Node:$/;"	c
+Node	LinkedList/test_linked_list.py	/^from linked_list import Linked_List, Node$/;"	i
 Node	StochasticSampling/histogram.py	/^class Node:$/;"	c
 Node	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/nodes.py	/^class Node(with_metaclass(NodeType, object)):$/;"	c
 Node	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/visitor.py	/^from jinja2.nodes import Node$/;"	i
@@ -3342,6 +3353,7 @@ Node	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/tr
 Node	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/packaging/markers.py	/^class Node(object):$/;"	c
 Node	StochasticSampling/venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/markers.py	/^class Node(object):$/;"	c
 NodeBuilder	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/dom.py	/^    class NodeBuilder(base.Node):$/;"	c	function:getDomBuilder
+NodeTest	LinkedList/test_linked_list.py	/^class NodeTest(unittest.TestCase):$/;"	c
 NodeTransformer	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/optimizer.py	/^from jinja2.visitor import NodeTransformer$/;"	i
 NodeTransformer	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/visitor.py	/^class NodeTransformer(NodeVisitor):$/;"	c
 NodeType	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/nodes.py	/^class NodeType(type):$/;"	c
@@ -7391,6 +7403,11 @@ __ilshift__	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/pypa
 __ilshift__	StochasticSampling/venv/lib/python2.7/site-packages/pkg_resources/_vendor/pyparsing.py	/^    def __ilshift__(self, other):$/;"	m	class:Forward	file:
 __imul__	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/datastructures.py	/^    __imul__ = __iadd__$/;"	v	class:ImmutableListMixin
 __index__	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/local.py	/^    __index__ = lambda x: x._get_current_object().__index__()$/;"	v	class:LocalProxy
+__init__	HashTable/Hash-Table-twof/hashtable.py	/^    def __init__(self, init_size=8):$/;"	m	class:HashTable
+__init__	HashTable/Hash-Table-twof/linked_list.py	/^    def __init__(self, arr=None):$/;"	m	class:Linked_List
+__init__	HashTable/Hash-Table-twof/linked_list.py	/^    def __init__(self, data, next=None):$/;"	m	class:Node
+__init__	LinkedList/linked_list.py	/^    def __init__(self, arr=None):$/;"	m	class:Linked_List
+__init__	LinkedList/linked_list.py	/^    def __init__(self, data, next=None):$/;"	m	class:Node
 __init__	StochasticSampling/histogram.py	/^    def __init__(self):$/;"	m	class:Graph
 __init__	StochasticSampling/histogram.py	/^    def __init__(self, word):$/;"	m	class:Node
 __init__	StochasticSampling/venv/lib/python2.7/UserDict.py	/^    def __init__(*args, **kwargs):$/;"	m	class:UserDict
@@ -8577,6 +8594,7 @@ __reduce_ex__	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/datas
 __reduce_ex__	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/datastructures.py	/^    def __reduce_ex__(self, protocol):$/;"	m	class:OrderedMultiDict	file:
 __release_local__	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/local.py	/^    def __release_local__(self):$/;"	m	class:Local	file:
 __release_local__	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/local.py	/^    def __release_local__(self):$/;"	m	class:LocalStack	file:
+__repr__	HashTable/Hash-Table-twof/hashtable.py	/^    def __repr__(self):$/;"	m	class:HashTable	file:
 __repr__	StochasticSampling/venv/lib/python2.7/UserDict.py	/^    def __repr__(self): return repr(self.data)$/;"	m	class:UserDict	file:
 __repr__	StochasticSampling/venv/lib/python2.7/UserDict.py	/^    def __repr__(self):$/;"	m	class:DictMixin	file:
 __repr__	StochasticSampling/venv/lib/python2.7/_abcoll.py	/^    def __repr__(self):$/;"	m	class:MappingView	file:
@@ -9160,6 +9178,7 @@ _boolop	StochasticSampling/venv/include/python2.7/Python-ast.h	/^typedef enum _b
 _browser_version_re	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/useragents.py	/^    _browser_version_re = r'(?:%s)[\/\\sa-z(]*(\\d+[.\\da-z]+)?(?i)'$/;"	v	class:UserAgentParser
 _bslash	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/pyparsing.py	/^_bslash    = chr(92)$/;"	v
 _bslash	StochasticSampling/venv/lib/python2.7/site-packages/pkg_resources/_vendor/pyparsing.py	/^_bslash    = chr(92)$/;"	v
+_bucket_index	HashTable/Hash-Table-twof/hashtable.py	/^    def _bucket_index(self, key):$/;"	m	class:HashTable
 _buf_append	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/contrib/iterio.py	/^    def _buf_append(self, string):$/;"	m	class:IterO
 _buffer_decode	StochasticSampling/venv/lib/python2.7/codecs.py	/^    def _buffer_decode(self, input, errors, final):$/;"	m	class:BufferedIncrementalDecoder
 _buffer_decode	StochasticSampling/venv/lib/python2.7/encodings/idna.py	/^    def _buffer_decode(self, input, errors, final):$/;"	m	class:IncrementalDecoder
@@ -11340,6 +11359,8 @@ appdirs	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/pkg_reso
 appdirs	StochasticSampling/venv/lib/python2.7/site-packages/pip/baseparser.py	/^from pip.utils import appdirs, get_terminal_size$/;"	i
 appdirs	StochasticSampling/venv/lib/python2.7/site-packages/pip/locations.py	/^from pip.utils import appdirs$/;"	i
 appdirs	StochasticSampling/venv/lib/python2.7/site-packages/pkg_resources/__init__.py	/^from pkg_resources.extern import appdirs$/;"	i
+append	HashTable/Hash-Table-twof/linked_list.py	/^    def append(self, data):$/;"	m	class:Linked_List
+append	LinkedList/linked_list.py	/^    def append(self, data):$/;"	m	class:Linked_List
 append	StochasticSampling/venv/lib/python2.7/_abcoll.py	/^    def append(self, value):$/;"	m	class:MutableSequence
 append	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/base.py	/^    def append(self, node):$/;"	m	class:ActiveFormattingElements
 append	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/pyparsing.py	/^    def append( self, item ):$/;"	m	class:ParseResults
@@ -11435,6 +11456,8 @@ as_const	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/nodes.py	/^ 
 as_const	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/nodes.py	/^    def as_const(self, eval_ctx=None):$/;"	m	class:Tuple
 as_const	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/nodes.py	/^    def as_const(self, eval_ctx=None):$/;"	m	class:UnaryExpr
 as_header	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/command/easy_install.py	/^    def as_header(self):$/;"	m	class:CommandSpec
+as_list	HashTable/Hash-Table-twof/linked_list.py	/^    def as_list(self):$/;"	m	class:Linked_List
+as_list	LinkedList/linked_list.py	/^    def as_list(self):$/;"	m	class:Linked_List
 as_mapping	StochasticSampling/venv/include/python2.7/object.h	/^    PyMappingMethods as_mapping;$/;"	m	struct:_heaptypeobject
 as_number	StochasticSampling/venv/include/python2.7/object.h	/^    PyNumberMethods as_number;$/;"	m	struct:_heaptypeobject
 as_requirement	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/pkg_resources/__init__.py	/^    def as_requirement(self):$/;"	m	class:Distribution
@@ -12919,6 +12942,7 @@ consume_positionals	StochasticSampling/venv/lib/python2.7/site-packages/gunicorn
 consume_value	StochasticSampling/venv/lib/python2.7/site-packages/click/core.py	/^    def consume_value(self, ctx, opts):$/;"	m	class:Parameter
 contact	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/pydist-schema.json	/^    "contact": {$/;"	f
 contacts	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/pydist-schema.json	/^        "contacts": {$/;"	f
+contains	HashTable/Hash-Table-twof/hashtable.py	/^    def contains(self, key):$/;"	m	class:HashTable
 contains	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/packaging/specifiers.py	/^    def contains(self, item, prereleases=None):$/;"	m	class:BaseSpecifier
 contains	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/packaging/specifiers.py	/^    def contains(self, item, prereleases=None):$/;"	m	class:SpecifierSet
 contains	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/packaging/specifiers.py	/^    def contains(self, item, prereleases=None):$/;"	m	class:_IndividualSpecifier
@@ -13788,6 +13812,9 @@ deinit	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/colorama/
 deinit	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/colorama/initialise.py	/^def deinit():$/;"	f
 del_stmt	StochasticSampling/venv/include/python2.7/graminit.h	/^#define del_stmt /;"	d
 delbitset	StochasticSampling/venv/include/python2.7/pgenheaders.h	/^#define delbitset /;"	d
+delete	HashTable/Hash-Table-twof/hashtable.py	/^    def delete(self, key):$/;"	m	class:HashTable
+delete	HashTable/Hash-Table-twof/linked_list.py	/^    def delete(self, data):$/;"	m	class:Linked_List
+delete	LinkedList/linked_list.py	/^    def delete(self, data):$/;"	m	class:Linked_List
 delete	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/cache.py	/^    def delete(self, key):$/;"	m	class:BaseCache
 delete	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/cache.py	/^    def delete(self, key):$/;"	m	class:DictCache
 delete	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py	/^    def delete(self, key):$/;"	m	class:FileCache
@@ -15370,6 +15397,8 @@ finalize_options	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/
 finalize_options	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/command/upload_docs.py	/^    def finalize_options(self):$/;"	m	class:upload_docs
 finalize_options	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/dist.py	/^    def finalize_options(self):$/;"	m	class:Distribution
 finalize_options	StochasticSampling/venv/lib/python2.7/site-packages/wheel/bdist_wheel.py	/^    def finalize_options(self):$/;"	m	class:bdist_wheel
+find	HashTable/Hash-Table-twof/linked_list.py	/^    def find(self, filter_func):$/;"	m	class:Linked_List
+find	LinkedList/linked_list.py	/^    def find(self, filter_func):$/;"	m	class:Linked_List
 find	StochasticSampling/venv/lib/python2.7/distutils/__init__.py	/^import opcode # opcode is not a virtualenv module, so we can use it to find the stdlib$/;"	i
 find	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/nodes.py	/^    def find(self, node_type):$/;"	m	class:Node
 find	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/distlib/locators.py	/^    def find(self, requirement, meta_extras=None, prereleases=False):$/;"	m	class:DependencyFinder
@@ -15748,6 +15777,7 @@ genkey	StochasticSampling/venv/lib/python2.7/site-packages/wheel/signatures/djbe
 genshi	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treeadapters/__init__.py	/^    from . import genshi  # noqa$/;"	i
 genshi	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/__init__.py	/^            from . import genshi$/;"	i
 genver	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_ranking.py	/^genver = 'py' + pyver[2:]$/;"	v
+get	HashTable/Hash-Table-twof/hashtable.py	/^    def get(self, key):$/;"	m	class:HashTable
 get	StochasticSampling/venv/include/python2.7/descrobject.h	/^    getter get;$/;"	m	struct:PyGetSetDef
 get	StochasticSampling/venv/lib/python2.7/UserDict.py	/^    def get(self, key, default=None):$/;"	m	class:DictMixin
 get	StochasticSampling/venv/lib/python2.7/UserDict.py	/^    def get(self, key, failobj=None):$/;"	m	class:UserDict
@@ -18085,6 +18115,7 @@ keygen_f	StochasticSampling/venv/lib/python2.7/site-packages/wheel/tool/__init__
 keyring	StochasticSampling/venv/lib/python2.7/site-packages/wheel/tool/__init__.py	/^        import keyring$/;"	i
 keyringTest	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_tool.py	/^        class keyringTest:$/;"	c	function:test_keygen.get_keyring
 keyringTest2	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_tool.py	/^                class keyringTest2:$/;"	c	function:test_keygen.get_keyring.keyringTest.get_keyring
+keys	HashTable/Hash-Table-twof/hashtable.py	/^    def keys(self):$/;"	m	class:HashTable
 keys	StochasticSampling/venv/include/python2.7/Python-ast.h	/^                        asdl_seq *keys;$/;"	m	struct:_expr::__anon87::__anon93
 keys	StochasticSampling/venv/lib/python2.7/UserDict.py	/^    def keys(self): return self.data.keys()$/;"	m	class:UserDict
 keys	StochasticSampling/venv/lib/python2.7/_abcoll.py	/^    def keys(self):$/;"	m	class:Mapping
@@ -18148,6 +18179,9 @@ legacy_storage_dir	StochasticSampling/venv/lib/python2.7/site-packages/pip/locat
 legacy_storage_dir	StochasticSampling/venv/lib/python2.7/site-packages/pip/locations.py	/^    legacy_storage_dir = os.path.join(user_dir, 'pip')$/;"	v
 len	StochasticSampling/venv/include/python2.7/object.h	/^    Py_ssize_t len;$/;"	m	struct:bufferinfo
 lenfunc	StochasticSampling/venv/include/python2.7/object.h	/^typedef Py_ssize_t (*lenfunc)(PyObject *);$/;"	t
+length	HashTable/Hash-Table-twof/hashtable.py	/^    def length(self):$/;"	m	class:HashTable
+length	HashTable/Hash-Table-twof/linked_list.py	/^    def length(self):$/;"	m	class:Linked_List
+length	LinkedList/linked_list.py	/^    def length(self):$/;"	m	class:Linked_List
 length	StochasticSampling/venv/include/python2.7/unicodeobject.h	/^    Py_ssize_t length;          \/* Length of raw Unicode data in buffer *\/$/;"	m	struct:__anon123
 length	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/runtime.py	/^    def length(self):$/;"	m	class:LoopContext
 length	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/datastructures.py	/^    length = _callback_property('_length')$/;"	v	class:ContentRange
@@ -20562,6 +20596,8 @@ prepare_method	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/r
 prepare_request	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/requests/sessions.py	/^    def prepare_request(self, request):$/;"	m	class:Session
 prepare_response	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/serialize.py	/^    def prepare_response(self, request, cached):$/;"	m	class:Serializer
 prepare_url	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/requests/models.py	/^    def prepare_url(self, url, params):$/;"	m	class:PreparedRequest
+prepend	HashTable/Hash-Table-twof/linked_list.py	/^    def prepend(self, data):$/;"	m	class:Linked_List
+prepend	LinkedList/linked_list.py	/^    def prepend(self, data):$/;"	m	class:Linked_List
 prepend_root	StochasticSampling/venv/lib/python2.7/site-packages/pip/req/req_install.py	/^            def prepend_root(path):$/;"	f	function:InstallRequirement.install
 prepend_scheme_if_needed	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/requests/utils.py	/^def prepend_scheme_if_needed(url, new_scheme):$/;"	f
 preprocess	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/environment.py	/^    def preprocess(self, source, name=None, filename=None):$/;"	m	class:Environment
@@ -20631,6 +20667,8 @@ print_function	StochasticSampling/venv/lib/python2.7/site-packages/pkg_resources
 print_function	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/script.py	/^from __future__ import print_function$/;"	i
 print_graph	StochasticSampling/histogram.py	/^    def print_graph(self):$/;"	m	class:Graph
 print_help	StochasticSampling/venv/lib/python2.7/site-packages/gunicorn/argparse_compat.py	/^    def print_help(self, file=None):$/;"	m	class:ArgumentParser
+print_list	HashTable/Hash-Table-twof/linked_list.py	/^    def print_list(self):$/;"	m	class:Linked_List
+print_list	LinkedList/linked_list.py	/^    def print_list(self):$/;"	m	class:Linked_List
 print_node	StochasticSampling/histogram.py	/^    def print_node(self):$/;"	m	class:Node
 print_results	StochasticSampling/venv/lib/python2.7/site-packages/pip/commands/search.py	/^def print_results(hits, name_column_width=None, terminal_width=None):$/;"	f
 print_results	StochasticSampling/venv/lib/python2.7/site-packages/pip/commands/show.py	/^def print_results(distributions, list_files=False, verbose=False):$/;"	f
@@ -22054,6 +22092,7 @@ session_interface	StochasticSampling/venv/lib/python2.7/site-packages/flask/app.
 session_json_serializer	StochasticSampling/venv/lib/python2.7/site-packages/flask/sessions.py	/^session_json_serializer = TaggedJSONSerializer()$/;"	v
 session_transaction	StochasticSampling/venv/lib/python2.7/site-packages/flask/testing.py	/^    def session_transaction(self, *args, **kwargs):$/;"	m	class:FlaskClient
 sessions	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/requests/api.py	/^from . import sessions$/;"	i
+set	HashTable/Hash-Table-twof/hashtable.py	/^    def set(self, key, value):$/;"	m	class:HashTable
 set	StochasticSampling/venv/include/python2.7/descrobject.h	/^    setter set;$/;"	m	struct:PyGetSetDef
 set	StochasticSampling/venv/include/python2.7/setobject.h	/^PyAPI_FUNC(PyObject *) PySet_Pop(PyObject *set);$/;"	v
 set	StochasticSampling/venv/include/python2.7/setobject.h	/^PyAPI_FUNC(int) PySet_Clear(PyObject *set);$/;"	v
@@ -23413,18 +23452,23 @@ test_all_labels	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/
 test_all_set	StochasticSampling/venv/lib/python2.7/site-packages/markupsafe/tests.py	/^    def test_all_set(self):$/;"	m	class:MarkupTestCase
 test_any	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/lexer.py	/^    def test_any(self, *iterable):$/;"	m	class:Token
 test_app	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/testapp.py	/^def test_app(environ, start_response):$/;"	f
+test_append	LinkedList/test_linked_list.py	/^    def test_append(self):$/;"	m	class:LinkedListTest
 test_args	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/command/test.py	/^    def test_args(self):$/;"	m	class:test
+test_as_list	LinkedList/test_linked_list.py	/^    def test_as_list(self):$/;"	m	class:LinkedListTest
 test_callable	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/tests.py	/^test_callable = callable$/;"	v
 test_client	StochasticSampling/venv/lib/python2.7/site-packages/flask/app.py	/^    def test_client(self, use_cookies=True, **kwargs):$/;"	m	class:Flask
 test_client_class	StochasticSampling/venv/lib/python2.7/site-packages/flask/app.py	/^    test_client_class = None$/;"	v	class:Flask
 test_comparison	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_ranking.py	/^    def test_comparison(self):$/;"	m	class:TestRanking
 test_compatibility_tags	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_basic.py	/^def test_compatibility_tags():$/;"	f
 test_complex_custom_formatting	StochasticSampling/venv/lib/python2.7/site-packages/markupsafe/tests.py	/^    def test_complex_custom_formatting(self):$/;"	m	class:MarkupTestCase
+test_contains	HashTable/Hash-Table-twof/test_hashtable.py	/^    def test_contains(self):$/;"	m	class:HashTableTest
 test_convert_egg	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_basic.py	/^def test_convert_egg():$/;"	f
 test_custom_formatting	StochasticSampling/venv/lib/python2.7/site-packages/markupsafe/tests.py	/^    def test_custom_formatting(self):$/;"	m	class:MarkupTestCase
 test_decode	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/webencodings/tests.py	/^def test_decode():$/;"	f
 test_default_tag	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_tagopt.py	/^def test_default_tag(temp_pkg):$/;"	f
 test_defined	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/tests.py	/^def test_defined(value):$/;"	f
+test_delete	HashTable/Hash-Table-twof/test_hashtable.py	/^    def test_delete(self):$/;"	m	class:HashTableTest
+test_delete	LinkedList/test_linked_list.py	/^    def test_delete(self):$/;"	m	class:LinkedListTest
 test_dict_interpol	StochasticSampling/venv/lib/python2.7/site-packages/markupsafe/tests.py	/^    def test_dict_interpol(self):$/;"	m	class:MarkupTestCase
 test_distributions	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_basic.py	/^test_distributions = ("complex-dist", "simple.dist", "headers.dist")$/;"	v
 test_divisibleby	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/tests.py	/^def test_divisibleby(value, num):$/;"	f
@@ -23438,11 +23482,16 @@ test_escaped	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/tests.py
 test_escaping	StochasticSampling/venv/lib/python2.7/site-packages/markupsafe/tests.py	/^    def test_escaping(self):$/;"	m	class:MarkupTestCase
 test_even	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/tests.py	/^def test_even(value):$/;"	f
 test_explicit_tag	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_tagopt.py	/^def test_explicit_tag(temp_pkg):$/;"	f
+test_find	LinkedList/test_linked_list.py	/^    def test_find(self):$/;"	m	class:LinkedListTest
 test_findable	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_basic.py	/^def test_findable():$/;"	f
 test_formatting	StochasticSampling/venv/lib/python2.7/site-packages/markupsafe/tests.py	/^    def test_formatting(self):$/;"	m	class:MarkupTestCase
 test_formatting_empty	StochasticSampling/venv/lib/python2.7/site-packages/markupsafe/tests.py	/^        def test_formatting_empty(self):$/;"	f	function:MarkupTestCase.test_formatting
 test_getlib	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_signatures.py	/^def test_getlib():$/;"	f
 test_html_interop	StochasticSampling/venv/lib/python2.7/site-packages/markupsafe/tests.py	/^    def test_html_interop(self):$/;"	m	class:MarkupTestCase
+test_init	HashTable/Hash-Table-twof/test_hashtable.py	/^    def test_init(self):$/;"	m	class:HashTableTest
+test_init	LinkedList/test_linked_list.py	/^    def test_init(self):$/;"	m	class:LinkedListTest
+test_init	LinkedList/test_linked_list.py	/^    def test_init(self):$/;"	m	class:NodeTest
+test_init_with_list	LinkedList/test_linked_list.py	/^    def test_init_with_list(self):$/;"	m	class:LinkedListTest
 test_install	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_install.py	/^def test_install():$/;"	f
 test_install_tool	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_install.py	/^def test_install_tool():$/;"	f
 test_invalid_label	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/webencodings/tests.py	/^def test_invalid_label():$/;"	f
@@ -23450,8 +23499,11 @@ test_iter_decode	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor
 test_iter_encode	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/webencodings/tests.py	/^def test_iter_encode():$/;"	f
 test_iterable	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/tests.py	/^def test_iterable(value):$/;"	f
 test_keygen	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_tool.py	/^def test_keygen():$/;"	f
+test_keys	HashTable/Hash-Table-twof/test_hashtable.py	/^    def test_keys(self):$/;"	m	class:HashTableTest
 test_labels	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/webencodings/tests.py	/^def test_labels():$/;"	f
 test_legacy_wheel_section_in_setup_cfg	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_tagopt.py	/^def test_legacy_wheel_section_in_setup_cfg(temp_pkg):$/;"	f
+test_length	HashTable/Hash-Table-twof/test_hashtable.py	/^    def test_length(self):$/;"	m	class:HashTableTest
+test_length	LinkedList/test_linked_list.py	/^    def test_length(self):$/;"	m	class:LinkedListTest
 test_load_save	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_keys.py	/^    def test_load_save(self):$/;"	m	class:TestWheelKeys
 test_load_save_incomplete	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_keys.py	/^    def test_load_save_incomplete(self):$/;"	m	class:TestWheelKeys
 test_lower	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/tests.py	/^def test_lower(value):$/;"	f
@@ -23469,6 +23521,7 @@ test_plat_name_ext_in_setupcfg	StochasticSampling/venv/lib/python2.7/site-packag
 test_plat_name_purepy	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_tagopt.py	/^def test_plat_name_purepy(temp_pkg):$/;"	f
 test_plat_name_purepy_in_setupcfg	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_tagopt.py	/^def test_plat_name_purepy_in_setupcfg(temp_pkg):$/;"	f
 test_pop_zipfile	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_wheelfile.py	/^def test_pop_zipfile():$/;"	f
+test_prepend	LinkedList/test_linked_list.py	/^    def test_prepend(self):$/;"	m	class:LinkedListTest
 test_pydist	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_basic.py	/^def test_pydist():$/;"	f
 test_pythontag_in_setup_cfg	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_tagopt.py	/^def test_pythontag_in_setup_cfg(temp_pkg):$/;"	f
 test_request_context	StochasticSampling/venv/lib/python2.7/site-packages/flask/app.py	/^    def test_request_context(self, *args, **kwargs):$/;"	m	class:Flask
@@ -23476,6 +23529,8 @@ test_requires	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/di
 test_requires	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/pydist-schema.json	/^    "test_requires": {$/;"	f
 test_sameas	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/tests.py	/^def test_sameas(value, other):$/;"	f
 test_sequence	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/tests.py	/^def test_sequence(value):$/;"	f
+test_set_and_get	HashTable/Hash-Table-twof/test_hashtable.py	/^    def test_set_and_get(self):$/;"	m	class:HashTableTest
+test_set_twice_and_get	HashTable/Hash-Table-twof/test_hashtable.py	/^    def test_set_twice_and_get(self):$/;"	m	class:HashTableTest
 test_splitting	StochasticSampling/venv/lib/python2.7/site-packages/markupsafe/tests.py	/^    def test_splitting(self):$/;"	m	class:MarkupTestCase
 test_string	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/tests.py	/^def test_string(value):$/;"	f
 test_string_interpolation	StochasticSampling/venv/lib/python2.7/site-packages/markupsafe/tests.py	/^    def test_string_interpolation(self):$/;"	m	class:MarkupTestCase
@@ -23488,6 +23543,7 @@ test_universal_tag	StochasticSampling/venv/lib/python2.7/site-packages/wheel/tes
 test_unpack	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_basic.py	/^def test_unpack():$/;"	f
 test_upper	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/tests.py	/^def test_upper(value):$/;"	f
 test_util	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_basic.py	/^def test_util():$/;"	f
+test_values	HashTable/Hash-Table-twof/test_hashtable.py	/^    def test_values(self):$/;"	m	class:HashTableTest
 test_verifying_zipfile	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_wheelfile.py	/^def test_verifying_zipfile():$/;"	f
 test_x_user_defined	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/webencodings/tests.py	/^def test_x_user_defined():$/;"	f
 test_zipfile_attributes	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_wheelfile.py	/^def test_zipfile_attributes():$/;"	f
@@ -24093,6 +24149,8 @@ unique_everseen	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/p
 unique_values	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/package_index.py	/^def unique_values(func):$/;"	f
 unique_words	Histogram/histogram.py	/^def unique_words(hist_dict):$/;"	f
 units	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/datastructures.py	/^    units = _callback_property('_units')$/;"	v	class:ContentRange
+unittest	HashTable/Hash-Table-twof/test_hashtable.py	/^import unittest$/;"	i
+unittest	LinkedList/test_linked_list.py	/^import unittest$/;"	i
 unittest	StochasticSampling/venv/lib/python2.7/site-packages/markupsafe/tests.py	/^import unittest$/;"	i
 unittest	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/py31compat.py	/^import unittest$/;"	i
 unittest	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_keys.py	/^import unittest$/;"	i
@@ -24249,6 +24307,8 @@ upload_documentation	StochasticSampling/venv/lib/python2.7/site-packages/pip/_ve
 upload_file	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/distlib/index.py	/^    def upload_file(self, metadata, filename, signer=None, sign_password=None,$/;"	m	class:PackageIndex
 upload_file	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/command/upload_docs.py	/^    def upload_file(self, filename):$/;"	m	class:upload_docs
 upper	StochasticSampling/venv/include/python2.7/Python-ast.h	/^                        expr_ty upper;$/;"	m	struct:_slice::__anon110::__anon111
+upsert_first	HashTable/Hash-Table-twof/linked_list.py	/^    def upsert_first(self, data, filter_func):$/;"	m	class:Linked_List
+upsert_first	LinkedList/linked_list.py	/^    def upsert_first(self, data, filter_func):$/;"	m	class:Linked_List
 upsert_vert	StochasticSampling/histogram.py	/^    def upsert_vert(self, prev_word, subsequent_word):$/;"	m	class:Graph
 upsert_vert	StochasticSampling/histogram.py	/^    def upsert_vert(self, the_word, node_dict):$/;"	m	class:Node
 uptodate	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/loaders.py	/^            def uptodate():$/;"	f	function:FileSystemLoader.get_source
@@ -24657,6 +24717,7 @@ value_converters	StochasticSampling/venv/lib/python2.7/site-packages/pip/compat/
 value_from_envvar	StochasticSampling/venv/lib/python2.7/site-packages/click/core.py	/^    def value_from_envvar(self, ctx):$/;"	m	class:Option
 value_from_envvar	StochasticSampling/venv/lib/python2.7/site-packages/click/core.py	/^    def value_from_envvar(self, ctx):$/;"	m	class:Parameter
 value_is_missing	StochasticSampling/venv/lib/python2.7/site-packages/click/core.py	/^    def value_is_missing(self, value):$/;"	m	class:Parameter
+values	HashTable/Hash-Table-twof/hashtable.py	/^    def values(self):$/;"	m	class:HashTable
 values	StochasticSampling/venv/include/python2.7/Python-ast.h	/^                        asdl_seq *values;$/;"	m	struct:_expr::__anon87::__anon88
 values	StochasticSampling/venv/include/python2.7/Python-ast.h	/^                        asdl_seq *values;$/;"	m	struct:_expr::__anon87::__anon93
 values	StochasticSampling/venv/include/python2.7/Python-ast.h	/^                        asdl_seq *values;$/;"	m	struct:_stmt::__anon66::__anon73
