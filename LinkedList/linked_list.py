@@ -1,4 +1,3 @@
-
 class Node:
 
     def __init__(self, data, next=None):
@@ -16,9 +15,9 @@ class Linked_List:
             for item in arr:
                 self.append(item)
 
-    # O(1)
     def append(self, data):
         new_node = Node(data, None)
+
         if self.count == 0:
             self.head = new_node
             self.tail = new_node
@@ -28,9 +27,9 @@ class Linked_List:
 
         self.count += 1
 
-    # O(1)
     def prepend(self, data):
         new_node = Node(data, None)
+
         if self.count == 0:
             self.head = new_node
             self.tail = new_node
@@ -40,74 +39,83 @@ class Linked_List:
 
         self.count += 1
 
-    # O(n)
-    def upsert_first(self, data, filter_func):
-        if self.find(lambda item: item == data) is None:
+    def upsert_first(self, data,
+                     filter_func=None):
+        if filter_func is None:
+            def filter_func(item): return item == data
+
+        if self.find(filter_func) is None:
             self.append(data)
+            return
         else:
             current_node = self.head
 
-            while current_node.next is not None:
+            while current_node is not None:
                 if filter_func(current_node.data):
                     current_node.data = data
-                elif filter_func(current_node.next.data):
-                    current_node.next.data = data
-                else:
+                    return
+                elif current_node.next is not None:
                     current_node = current_node.next
                     continue
 
-            return None
-
     # This is really dirty and needs to be cleaned up
-    # O(n)
-    def delete(self, data):
+    def delete(self, data, filter_func=None):
         found = False
+        found_node = None
+        prev_found_node = None
+
+        if filter_func is None:
+            def filter_func(item): return item == data
 
         if self.count == 0:
             raise ValueError
         else:
             current_node = self.head
 
-            while current_node.next is not None:
-                if current_node.data == data:
+            while current_node is not None:
+                if filter_func(current_node.data):
                     found = True
+                    found_node = current_node
+                    prev_found_node = None
                     break
-                elif current_node.next.data == data:
+                elif filter_func(current_node.next.data):
                     found = True
+                    found_node = current_node.next
+                    prev_found_node = current_node
                     break
                 else:
                     current_node = current_node.next
                     continue
 
-            if found and current_node.next == self.tail:
-                self.tail = current_node
+            if self.count == 1 and found:
                 self.count -= 1
-            elif found and current_node == self.head:
-                self.head = current_node.next
-                self.count -= 1
-            elif found:
-                self.count -= 1
-
-            if self.count == 0:
                 self.head = None
                 self.tail = None
                 return
 
-            if not found:
+            if found and found_node == self.tail:
+                self.tail = prev_found_node
+                prev_found_node.next = None
+                self.count -= 1
+            elif found and found_node == self.head:
+                self.head = found_node.next
+                self.count -= 1
+            elif found:
+                self.count -= 1
+                prev_found_node.next = found_node.next
+            elif not found:
                 raise ValueError
-            elif current_node.next.next is not None:
-                current_node.next = current_node.next.next
-                print("not none")
-            elif current_node.next.next is None:
-                self.tail = current_node
-                print("none")
+            else:
+                print("unhandled edge case")
 
-    # O(n) (Given O(1) filter function)
     def find(self, filter_func):
         if self.count == 0:
             return None
         else:
             current_node = self.head
+
+        if filter_func(current_node.data):
+            return current_node.data
 
         while current_node.next is not None:
             if filter_func(current_node.data):
@@ -120,29 +128,36 @@ class Linked_List:
 
         return None
 
-    # O(n)
-    def as_list(self):
+    def as_list(self, array_builder=None):
         listed = []
+
+        if array_builder is None:
+            def array_builder(item): return item
+
         if self.count == 0:
             return listed
         else:
             current_node = self.head
-            listed += current_node.data
+            listed.append(array_builder(current_node.data))
+
             while current_node.next is not None:
-                listed += current_node.next.data
+                listed.append(array_builder(current_node.next.data))
                 current_node = current_node.next
+
             return listed
 
-    # O(n)
-    def print_list(self):
+    def print_list(self, print_func=None):
+        if print_func is None:
+            def print_func(data): print(data)
+
         if self.count == 0:
             return
         else:
-            print(self.head.data)
+            print_func(self.head.data)
             current_node = self.head
             while current_node.next is not None:
-                print(current_node.next.data)
+                print_func(current_node.next.data)
                 current_node = current_node.next
-    # O(1)
+
     def length(self):
         return self.count
