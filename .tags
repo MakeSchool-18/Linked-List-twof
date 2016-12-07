@@ -2105,6 +2105,7 @@ HashMismatch	StochasticSampling/venv/lib/python2.7/site-packages/pip/exceptions.
 HashMismatch	StochasticSampling/venv/lib/python2.7/site-packages/pip/utils/hashes.py	/^from pip.exceptions import HashMismatch, HashMissing, InstallationError$/;"	i
 HashMissing	StochasticSampling/venv/lib/python2.7/site-packages/pip/exceptions.py	/^class HashMissing(HashError):$/;"	c
 HashMissing	StochasticSampling/venv/lib/python2.7/site-packages/pip/utils/hashes.py	/^from pip.exceptions import HashMismatch, HashMissing, InstallationError$/;"	i
+HashTable	HashTable/Hash-Table-twof/anythingTest.py	/^from hashtable import HashTable$/;"	i
 HashTable	HashTable/Hash-Table-twof/hashtable.py	/^class HashTable(object):$/;"	c
 HashTable	HashTable/Hash-Table-twof/test_hashtable.py	/^from hashtable import HashTable$/;"	i
 HashTableTest	HashTable/Hash-Table-twof/test_hashtable.py	/^class HashTableTest(unittest.TestCase):$/;"	c
@@ -2871,6 +2872,7 @@ Link	StochasticSampling/venv/lib/python2.7/site-packages/pip/vcs/subversion.py	/
 LinkFileLock	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/lockfile/__init__.py	/^def LinkFileLock(*args, **kwds):$/;"	f
 LinkLockFile	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/lockfile/linklockfile.py	/^class LinkLockFile(LockBase):$/;"	c
 LinkedListTest	LinkedList/test_linked_list.py	/^class LinkedListTest(unittest.TestCase):$/;"	c
+Linked_List	HashTable/Hash-Table-twof/anythingTest.py	/^from linked_list import Linked_List$/;"	i
 Linked_List	HashTable/Hash-Table-twof/hashtable.py	/^from linked_list import Linked_List$/;"	i
 Linked_List	HashTable/Hash-Table-twof/linked_list.py	/^class Linked_List:$/;"	c
 Linked_List	LinkedList/linked_list.py	/^class Linked_List:$/;"	c
@@ -8236,6 +8238,8 @@ __is_fp_closed	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/c
 __isabstractmethod__	StochasticSampling/venv/lib/python2.7/abc.py	/^    __isabstractmethod__ = True$/;"	v	class:abstractproperty
 __isub__	StochasticSampling/venv/lib/python2.7/_abcoll.py	/^    def __isub__(self, it):$/;"	m	class:MutableSet	file:
 __isub__	StochasticSampling/venv/lib/python2.7/_weakrefset.py	/^    def __isub__(self, other):$/;"	m	class:WeakSet	file:
+__iter__	HashTable/Hash-Table-twof/hashtable.py	/^    def __iter__(self):$/;"	m	class:HashTable	file:
+__iter__	HashTable/Hash-Table-twof/linked_list.py	/^    def __iter__(self):$/;"	m	class:Linked_List	file:
 __iter__	StochasticSampling/venv/lib/python2.7/UserDict.py	/^    def __iter__(self):$/;"	m	class:DictMixin	file:
 __iter__	StochasticSampling/venv/lib/python2.7/UserDict.py	/^    def __iter__(self):$/;"	m	class:IterableUserDict	file:
 __iter__	StochasticSampling/venv/lib/python2.7/_abcoll.py	/^    def __iter__(self):$/;"	m	class:ItemsView	file:
@@ -8509,6 +8513,8 @@ __new__	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/contrib/ite
 __new__	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/contrib/iterio.py	/^    def __new__(cls, obj, sentinel=''):$/;"	m	class:IterIO	file:
 __newobj__	StochasticSampling/venv/lib/python2.7/copy_reg.py	/^def __newobj__(cls, *args):$/;"	f	file:
 __next	StochasticSampling/venv/lib/python2.7/sre_parse.py	/^    def __next(self):$/;"	m	class:Tokenizer	file:
+__next__	HashTable/Hash-Table-twof/hashtable.py	/^    def __next__(self):$/;"	m	class:HashTable	file:
+__next__	HashTable/Hash-Table-twof/linked_list.py	/^    def __next__(self):$/;"	m	class:Linked_List	file:
 __next__	StochasticSampling/venv/lib/python2.7/site-packages/gunicorn/http/body.py	/^    def __next__(self):$/;"	m	class:Body	file:
 __next__	StochasticSampling/venv/lib/python2.7/site-packages/gunicorn/http/parser.py	/^    def __next__(self):$/;"	m	class:Parser	file:
 __next__	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/environment.py	/^    def __next__(self):$/;"	m	class:TemplateStream	file:
@@ -10026,6 +10032,7 @@ _is_directory	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/di
 _is_hostmask	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/ipaddress.py	/^    def _is_hostmask(self, ip_str):$/;"	m	class:_BaseV4
 _is_local_repository	StochasticSampling/venv/lib/python2.7/site-packages/pip/vcs/__init__.py	/^    def _is_local_repository(self, repo):$/;"	m	class:VersionControl
 _is_old_module	StochasticSampling/venv/lib/python2.7/site-packages/flask/wrappers.py	/^    _is_old_module = False$/;"	v	class:Request
+_is_optimized	HashTable/Hash-Table-twof/hashtable.py	/^    def _is_optimized(self):$/;"	m	class:HashTable
 _is_platform_dependent	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/distlib/locators.py	/^    def _is_platform_dependent(self, url):$/;"	m	class:SimpleScrapingLocator
 _is_pypy	StochasticSampling/venv/lib/python2.7/site.py	/^_is_pypy = hasattr(sys, 'pypy_version_info')$/;"	v
 _is_read_error	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/retry.py	/^    def _is_read_error(self, err):$/;"	m	class:Retry
@@ -12192,6 +12199,7 @@ classifiers	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/pydis
 clean	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/distlib/locators.py	/^        def clean(url):$/;"	f	function:Page.links
 clean	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/re-vendor.py	/^def clean():$/;"	f
 clean_link	StochasticSampling/venv/lib/python2.7/site-packages/pip/index.py	/^    def clean_link(self, url):$/;"	m	class:HTMLPage
+clean_subs	Util/srt_sanitizer.py	/^def clean_subs(sanitized_subs):$/;"	f
 cleanup	StochasticSampling/venv/lib/python2.7/site-packages/pip/utils/build.py	/^    def cleanup(self):$/;"	m	class:BuildDirectory
 cleanup	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/local.py	/^    def cleanup(self):$/;"	m	class:LocalManager
 cleanup_files	StochasticSampling/venv/lib/python2.7/site-packages/pip/req/req_set.py	/^    def cleanup_files(self):$/;"	m	class:RequirementSet
@@ -12863,6 +12871,7 @@ concat	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/ext.py	/^from 
 concat	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/runtime.py	/^     internalcode, object_type_repr$/;"	i
 concat	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/utils.py	/^concat = u''.join$/;"	v
 concatenateCharacterTokens	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/__init__.py	/^def concatenateCharacterTokens(tokens):$/;"	f
+concatinate_string_to_file	Util/srt_sanitizer.py	/^def concatinate_string_to_file(str, file):$/;"	f
 concurrent	StochasticSampling/venv/lib/python2.7/site-packages/gunicorn/workers/gthread.py	/^    import concurrent.futures as futures$/;"	i
 conditional_headers	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/controller.py	/^    def conditional_headers(self, request):$/;"	m	class:CacheController
 config_basename	StochasticSampling/venv/lib/python2.7/site-packages/pip/locations.py	/^    config_basename = 'pip.conf'$/;"	v
@@ -17034,6 +17043,7 @@ hostmask	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/ipaddre
 hostname	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/url.py	/^    def hostname(self):$/;"	m	class:Url
 hosts	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/ipaddress.py	/^    def hosts(self):$/;"	m	class:IPv6Network
 hosts	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/ipaddress.py	/^    def hosts(self):$/;"	m	class:_BaseNetwork
+ht	HashTable/Hash-Table-twof/anythingTest.py	/^ht = HashTable(1)$/;"	v
 ht_name	StochasticSampling/venv/include/python2.7/object.h	/^    PyObject *ht_name, *ht_slots;$/;"	m	struct:_heaptypeobject
 ht_slots	StochasticSampling/venv/include/python2.7/object.h	/^    PyObject *ht_name, *ht_slots;$/;"	m	struct:_heaptypeobject
 ht_type	StochasticSampling/venv/include/python2.7/object.h	/^    PyTypeObject ht_type;$/;"	m	struct:_heaptypeobject
@@ -17833,6 +17843,7 @@ isxdigit	StochasticSampling/venv/include/python2.7/bytes_methods.h	/^#undef isxd
 it	StochasticSampling/venv/lib/python2.7/distutils/__init__.py	/^import opcode # opcode is not a virtualenv module, so we can use it to find the stdlib$/;"	i
 itemgetter	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/filters.py	/^from operator import itemgetter$/;"	i
 itemgetter	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/lexer.py	/^from operator import itemgetter$/;"	i
+items	HashTable/Hash-Table-twof/hashtable.py	/^    def items(self):$/;"	m	class:HashTable
 items	StochasticSampling/venv/lib/python2.7/UserDict.py	/^    def items(self): return self.data.items()$/;"	m	class:UserDict
 items	StochasticSampling/venv/lib/python2.7/UserDict.py	/^    def items(self):$/;"	m	class:DictMixin
 items	StochasticSampling/venv/lib/python2.7/_abcoll.py	/^    def items(self):$/;"	m	class:Mapping
@@ -18274,6 +18285,7 @@ listvalues	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/datastru
 listvalues	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/datastructures.py	/^    def listvalues(self):$/;"	m	class:MultiDict
 listvalues	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/datastructures.py	/^    def listvalues(self):$/;"	m	class:OrderedMultiDict
 literal	StochasticSampling/venv/lib/python2.7/sre_parse.py	/^    def literal(literal, p=p, pappend=a):$/;"	f	function:parse_template
+ll	HashTable/Hash-Table-twof/anythingTest.py	/^ll = Linked_List()$/;"	v
 ll_label	StochasticSampling/venv/include/python2.7/grammar.h	/^    label	*ll_label;$/;"	m	struct:__anon35
 ll_nlabels	StochasticSampling/venv/include/python2.7/grammar.h	/^    int		 ll_nlabels;$/;"	m	struct:__anon35
 load	StochasticSampling/venv/lib/python2.7/site-packages/flask/json.py	/^def load(fp, **kwargs):$/;"	f
@@ -19612,6 +19624,7 @@ openStream	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/html5
 open_doc	Histogram/histogram.py	/^def open_doc(source_text):$/;"	f
 open_doc	StochasticSampling/histogram.py	/^def open_doc(source_text):$/;"	f
 open_doc	StochasticSampling/server.py	/^from histogram import gen_histogram_graph, open_doc$/;"	i
+open_doc	Util/srt_sanitizer.py	/^def open_doc(source_text):$/;"	f
 open_file	StochasticSampling/venv/lib/python2.7/site-packages/click/__init__.py	/^     format_filename, get_app_dir, get_os_args$/;"	i
 open_file	StochasticSampling/venv/lib/python2.7/site-packages/click/utils.py	/^def open_file(filename, mode='r', encoding=None, errors='strict',$/;"	f
 open_for_csv	StochasticSampling/venv/lib/python2.7/site-packages/pip/wheel.py	/^def open_for_csv(name, mode):$/;"	f
@@ -19687,6 +19700,7 @@ ops	StochasticSampling/venv/include/python2.7/Python-ast.h	/^                   
 opt_flags	StochasticSampling/venv/bin/python-config	/^opt_flags = [flag for (flag, val) in opts]$/;"	v
 optimize	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/environment.py	/^from jinja2.optimizer import optimize$/;"	i
 optimize	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/optimizer.py	/^def optimize(node, environment):$/;"	f
+optimize_buckets	HashTable/Hash-Table-twof/hashtable.py	/^    def optimize_buckets(self):$/;"	m	class:HashTable
 option	StochasticSampling/venv/lib/python2.7/site-packages/click/__init__.py	/^     password_option, version_option, help_option$/;"	i
 option	StochasticSampling/venv/lib/python2.7/site-packages/click/decorators.py	/^def option(*param_decls, **attrs):$/;"	f
 option_base	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/command/alias.py	/^from setuptools.command.setopt import edit_config, option_base, config_file$/;"	i
@@ -20681,6 +20695,7 @@ print_node	StochasticSampling/histogram.py	/^    def print_node(self):$/;"	m	cla
 print_results	StochasticSampling/venv/lib/python2.7/site-packages/pip/commands/search.py	/^def print_results(hits, name_column_width=None, terminal_width=None):$/;"	f
 print_results	StochasticSampling/venv/lib/python2.7/site-packages/pip/commands/show.py	/^def print_results(distributions, list_files=False, verbose=False):$/;"	f
 print_stmt	StochasticSampling/venv/include/python2.7/graminit.h	/^#define print_stmt /;"	d
+print_table	HashTable/Hash-Table-twof/hashtable.py	/^    def print_table(self):$/;"	m	class:HashTable
 print_usage	StochasticSampling/venv/lib/python2.7/site-packages/gunicorn/argparse_compat.py	/^    def print_usage(self, file=None):$/;"	m	class:ArgumentParser
 print_usage	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/script.py	/^def print_usage(actions):$/;"	f
 print_version	StochasticSampling/venv/lib/python2.7/site-packages/gunicorn/argparse_compat.py	/^    def print_version(self, file=None):$/;"	m	class:ArgumentParser
@@ -20887,6 +20902,7 @@ pydoc	StochasticSampling/venv/lib/python2.7/site.py	/^        import pydoc$/;"	i
 pylibmc	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/contrib/cache.py	/^            import pylibmc$/;"	i
 pyparsing_common	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/pyparsing.py	/^class pyparsing_common:$/;"	c
 pyparsing_common	StochasticSampling/venv/lib/python2.7/site-packages/pkg_resources/_vendor/pyparsing.py	/^class pyparsing_common:$/;"	c
+pysrt	Util/srt_sanitizer.py	/^import pysrt$/;"	i
 pytest	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/conftest.py	/^import pytest$/;"	i
 pytest	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_tagopt.py	/^import pytest$/;"	i
 pytest	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_wheelfile.py	/^import pytest$/;"	i
@@ -21106,6 +21122,7 @@ re	StochasticSampling/venv/lib/python2.7/site-packages/wheel/metadata.py	/^impor
 re	StochasticSampling/venv/lib/python2.7/site-packages/wheel/wininst2wheel.py	/^import re$/;"	i
 re	StochasticSampling/venv/lib/python2.7/sre.py	/^warnings.warn("The sre module is deprecated, please import re.",$/;"	i
 re	StochasticSampling/venv/lib/python2.7/warnings.py	/^    import re$/;"	i
+re	Util/srt_sanitizer.py	/^import re$/;"	i
 reChar	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_ihatexml.py	/^reChar = re.compile(r"#x([\\d|A-F]{4,4})")$/;"	v
 reCharRange	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_ihatexml.py	/^reCharRange = re.compile(r"\\[#x([\\d|A-F]{4,4})-#x([\\d|A-F]{4,4})\\]")$/;"	v
 read	StochasticSampling/venv/lib/python2.7/codecs.py	/^    def read(self, size=-1):$/;"	m	class:StreamReaderWriter
@@ -21547,6 +21564,7 @@ reset_all	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/colora
 reset_all	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/colorama/winterm.py	/^    def reset_all(self, on_stderr=None):$/;"	m	class:WinTerm
 resetlocale	StochasticSampling/venv/lib/python2.7/locale.py	/^def resetlocale(category=LC_ALL):$/;"	f
 resetwarnings	StochasticSampling/venv/lib/python2.7/warnings.py	/^def resetwarnings():$/;"	f
+resize_table	HashTable/Hash-Table-twof/hashtable.py	/^    def resize_table(self, size=None):$/;"	m	class:HashTable
 resolve	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/runtime.py	/^    def resolve(self, key):$/;"	m	class:Context
 resolve	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/distlib/compat.py	/^        def resolve(self, s):$/;"	m	class:BaseConfigurator
 resolve	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/distlib/util.py	/^def resolve(module_name, dotted_path):$/;"	f
@@ -21810,8 +21828,10 @@ samestat	StochasticSampling/venv/lib/python2.7/posixpath.py	/^def samestat(s1, s
 sandboxed	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/environment.py	/^    sandboxed = False$/;"	v	class:Environment
 sandboxed	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/sandbox.py	/^    sandboxed = True$/;"	v	class:SandboxedEnvironment
 sanitize	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/serializer.py	/^    sanitize = False$/;"	v	class:HTMLSerializer
+sanitize	Util/srt_sanitizer.py	/^def sanitize(subs):$/;"	f
 sanitize_css	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/sanitizer.py	/^    def sanitize_css(self, style):$/;"	m	class:Filter
 sanitize_token	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/sanitizer.py	/^    def sanitize_token(self, token):$/;"	m	class:Filter
+sanitized_subs	Util/srt_sanitizer.py	/^sanitized_subs = sanitize(subs)$/;"	v
 sanity_check	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/distlib/markers.py	/^        def sanity_check(lhsnode, rhsnode):$/;"	f	function:Evaluator.do_compare
 save	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/nodes.py	/^    def save(self):$/;"	m	class:EvalContext
 save	StochasticSampling/venv/lib/python2.7/site-packages/pip/utils/outdated.py	/^    def save(self, pypi_version, current_time):$/;"	m	class:GlobalSelfCheckState
@@ -23021,6 +23041,7 @@ subprocess	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/comman
 subprocess	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/_reloader.py	/^import subprocess$/;"	i
 subprocess	StochasticSampling/venv/lib/python2.7/site-packages/wheel/bdist_wheel.py	/^import subprocess$/;"	i
 subprocess	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_tagopt.py	/^import subprocess$/;"	i
+subs	Util/srt_sanitizer.py	/^subs = open_doc("Reservoir Dogs.srt")$/;"	v
 subscribe	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/pkg_resources/__init__.py	/^    def subscribe(self, callback, existing=True):$/;"	m	class:WorkingSet
 subscribe	StochasticSampling/venv/lib/python2.7/site-packages/pkg_resources/__init__.py	/^    def subscribe(self, callback, existing=True):$/;"	m	class:WorkingSet
 subscript	StochasticSampling/venv/include/python2.7/graminit.h	/^#define subscript /;"	d
