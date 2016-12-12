@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import pysrt
 import re
 
@@ -25,10 +26,13 @@ def concatinate_string_to_file(str, file):
     corpus.write(str)
 
 
-def clean_subs(sanitized_subs):
-
+def tokenize_and_clean_subs(sanitized_subs):
+    p = "(?:'([\wÀ-ÿ]+[\'\-]?[\wÀ-ÿ]*)'|((?:[\wÀ-ÿ]+[\'\-]?[\wÀ-ÿ]*[\'\-]?"\
+        ")+)|((?:'?[\wÀ-ÿ]+[\'\-]?[\wÀ-ÿ]*)+))"
+    pattern = re.compile(p)
+    return pattern.findall(sanitized_subs)
 
 
 subs = open_doc("Reservoir Dogs.srt")
 sanitized_subs = sanitize(subs)
-concatinate_string_to_file(sanitized_subs, "corpus.txt")
+print(clean_subs(sanitized_subs))
