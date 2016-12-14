@@ -15750,7 +15750,7 @@ gc_refs	StochasticSampling/venv/include/python2.7/objimpl.h	/^        Py_ssize_t
 gcfg	StochasticSampling/venv/lib/python2.7/site-packages/gunicorn/app/pasterapp.py	/^    gcfg = None$/;"	v	class:PasterBaseApplication
 gen_header	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/command/bdist_egg.py	/^    def gen_header(self):$/;"	m	class:bdist_egg
 gen_histogram_dict	StochasticSampling/histogram.py	/^def gen_histogram_dict(lines):$/;"	f
-gen_histogram_graph	MarkovChain/histogram.py	/^def gen_histogram_graph(lines):$/;"	f
+gen_histogram_graph	MarkovChain/histogram.py	/^def gen_histogram_graph(tokens):$/;"	f
 gen_histogram_graph	MarkovChain/server.py	/^from histogram import gen_histogram_graph, open_doc$/;"	i
 gen_histogram_graph	StochasticSampling/histogram.py	/^def gen_histogram_graph(lines):$/;"	f
 gen_histogram_graph	StochasticSampling/server.py	/^from histogram import gen_histogram_graph, open_doc$/;"	i
@@ -19746,6 +19746,7 @@ orelse	StochasticSampling/venv/include/python2.7/Python-ast.h	/^                
 orelse	StochasticSampling/venv/include/python2.7/Python-ast.h	/^                        asdl_seq *orelse;$/;"	m	struct:_stmt::__anon66::__anon79
 orelse	StochasticSampling/venv/include/python2.7/Python-ast.h	/^                        expr_ty orelse;$/;"	m	struct:_expr::__anon87::__anon92
 org	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/sandbox.py	/^    import org.python.modules.posix.PosixModule as _os$/;"	i
+orginize_sentence_end	Util/srt_sanitizer.py	/^def orginize_sentence_end(file):$/;"	f
 orig	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/command/bdist_rpm.py	/^import distutils.command.bdist_rpm as orig$/;"	i
 orig	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/command/bdist_wininst.py	/^import distutils.command.bdist_wininst as orig$/;"	i
 orig	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/command/build_py.py	/^import distutils.command.build_py as orig$/;"	i
@@ -21851,7 +21852,6 @@ sanitize	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/html5li
 sanitize	Util/srt_sanitizer.py	/^def sanitize(subs):$/;"	f
 sanitize_css	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/sanitizer.py	/^    def sanitize_css(self, style):$/;"	m	class:Filter
 sanitize_token	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/sanitizer.py	/^    def sanitize_token(self, token):$/;"	m	class:Filter
-sanitized_subs	Util/srt_sanitizer.py	/^sanitized_subs = sanitize(subs)$/;"	v
 sanity_check	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/distlib/markers.py	/^        def sanity_check(lhsnode, rhsnode):$/;"	f	function:Evaluator.do_compare
 save	StochasticSampling/venv/lib/python2.7/site-packages/jinja2/nodes.py	/^    def save(self):$/;"	m	class:EvalContext
 save	StochasticSampling/venv/lib/python2.7/site-packages/pip/utils/outdated.py	/^    def save(self, pypi_version, current_time):$/;"	m	class:GlobalSelfCheckState
@@ -23063,7 +23063,6 @@ subprocess	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/comman
 subprocess	StochasticSampling/venv/lib/python2.7/site-packages/werkzeug/_reloader.py	/^import subprocess$/;"	i
 subprocess	StochasticSampling/venv/lib/python2.7/site-packages/wheel/bdist_wheel.py	/^import subprocess$/;"	i
 subprocess	StochasticSampling/venv/lib/python2.7/site-packages/wheel/test/test_tagopt.py	/^import subprocess$/;"	i
-subs	Util/srt_sanitizer.py	/^subs = open_doc("Reservoir Dogs.srt")$/;"	v
 subscribe	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/pkg_resources/__init__.py	/^    def subscribe(self, callback, existing=True):$/;"	m	class:WorkingSet
 subscribe	StochasticSampling/venv/lib/python2.7/site-packages/pkg_resources/__init__.py	/^    def subscribe(self, callback, existing=True):$/;"	m	class:WorkingSet
 subscript	StochasticSampling/venv/include/python2.7/graminit.h	/^#define subscript /;"	d
@@ -24337,6 +24336,7 @@ update_headers	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/c
 update_headers	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/heuristics.py	/^    def update_headers(self, response):$/;"	m	class:ExpiresAfter
 update_headers	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/cachecontrol/heuristics.py	/^    def update_headers(self, response):$/;"	m	class:OneDayCache
 update_pth	StochasticSampling/venv/lib/python2.7/site-packages/setuptools/command/easy_install.py	/^    def update_pth(self, dist):$/;"	m	class:easy_install
+update_sanitized_corpus	Util/srt_sanitizer.py	/^def update_sanitized_corpus(the_file, text):$/;"	f
 update_submodules	StochasticSampling/venv/lib/python2.7/site-packages/pip/vcs/git.py	/^    def update_submodules(self, location):$/;"	m	class:Git
 update_template_context	StochasticSampling/venv/lib/python2.7/site-packages/flask/app.py	/^    def update_template_context(self, context):$/;"	m	class:Flask
 update_version	StochasticSampling/venv/lib/python2.7/site-packages/pip/_vendor/distlib/wheel.py	/^        def update_version(version, path):$/;"	f	function:Wheel.update

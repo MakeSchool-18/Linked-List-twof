@@ -60,6 +60,8 @@ class Graph:
         # dictionary where the keys are words as strings and values
         # are node objects
         self.nodes = {}
+        self.insert_word(".")  # indicates the start of a thought
+        self.insert_word("?")  # indicates the end of a thought
 
     # inserts a word into the graph if it doesn't already exist
     # within the graph
@@ -102,55 +104,37 @@ def open_doc(source_text):
 # generates a graph based on the source material passed to it
 # either as a single line of text or multiple lines like if a
 # docment was opened
-def gen_histogram_graph(lines):
+def gen_histogram_graph(tokens):
     graph = Graph()
     previous_word = ""
     is_end_thought = False
-    mid_word_characters = ["'", "-"]
-    end_characters = ["?", ".", ";", ":", "!", ","]
 
-    if isinstance(lines, list):
-        for line in lines:
-            for word in line.split(' '):
-                set_end_thought = False
+    for token in tokens:
+        set_end_thought = False
 
-                if word[:-1] in end_characters:
-                    set_end_thought = True
+        if word[:-1] in end_characters:
+            set_end_thought = True
 
-                stripped_word = ''.join([i for i in word if i.isalpha()
-                                        or ((i in mid_word_characters
-                                            and len(word) > 1))]) \
-                                .lower()
+        stripped_word = ''.join([i for i in word if i.isalpha()
+                                or ((i in mid_word_characters
+                                    and len(word) > 1))]) \
+                        .lower()
 
-                if stripped_word != '':
-                    graph.insert_word(stripped_word)
+        if stripped_word != '':
+            graph.insert_word(stripped_word)
 
-                    if is_end_thought:
-                        is_end_thought = False
-                        break
-                    elif previous_word == "":
-                        previous_word = stripped_word
-                    else:
-                        graph.upsert_vert(previous_word, stripped_word)
-                        previous_word = stripped_word
+            if is_end_thought:
+                is_end_thought = False
+                break
+            elif previous_word == "":
+                previous_word = stripped_word
+            else:
+                graph.upsert_vert(previous_word, stripped_word)
+                previous_word = stripped_word
 
-                if set_end_thought:
-                    is_end_thought = True
-    else:
-        for word in line.split(' '):
-            stripped_word = ''.join([i for i in word if i.isalpha()
-                                    or ((i in mid_word_characters
-                                        and len(word) > 1))]) \
-                                    .lower()
-            if stripped_word != '':
-                graph.insert_word(stripped_word)
+            if set_end_thought:
+                is_end_thought = True
 
-                if previous_word == "":
-                    previous_word = stripped_word
-                else:
-                    graph.upsert_vert(previous_word, stripped_word)
-                    previous_word = stripped_word
-    return graph
 
 # TODO:
 # Fix the ingestion so that it stops recording subsequence at periods
